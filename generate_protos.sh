@@ -1,0 +1,1 @@
+protoc --elixir_out=one_file_per_module=true,plugins=grpc:./lib/ ./protos/*.proto

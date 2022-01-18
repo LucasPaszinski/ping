@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto;
+
+service Pong {
+  rpc ping(PongRequest) returns (PongResponse);
+}
+
+message PongRequest {
+  string query = 1;
+}
+
+message PongResponse {
+    string query = 1;
+  }
